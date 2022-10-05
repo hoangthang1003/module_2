@@ -1,4 +1,4 @@
-package ss1;
+package ss1_introduction.exercise;
 
 import java.util.Scanner;
 
@@ -10,3 +10,4 @@ public class Hello {
         System.out.println("Hello: " + name);
     }
 }
+
