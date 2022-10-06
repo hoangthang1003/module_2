@@ -7,10 +7,8 @@ public class NumberToString {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập số vào");
         int number = scanner.nextInt();
-        String[] numberToString =
-                {"One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine "};
-        String[] numberToString2 =
-                {"Ten ", "Eleven ", "twelve ", "Thirteen ", "Fourteen ", "Fifteen ", "Sixteen ", "Seventeen ", "Eighteen ", "Nineteen "};
+        String[] numberToString = {"One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine "};
+        String[] numberToString2 = {"Ten ", "Eleven ", "twelve ", "Thirteen ", "Fourteen ", "Fifteen ", "Sixteen ", "Seventeen ", "Eighteen ", "Nineteen "};
         while (number > 999) {
             System.out.println("Nhập lại số nhỏ hơn 1000");
             number = scanner.nextInt();
