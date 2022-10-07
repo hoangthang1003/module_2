@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SumArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numA, numB,choose;
+        int numA, numB, choose;
         System.out.print("Nhập vào số cột");
         numA = scanner.nextInt();
         System.out.print("Nhập vào số hàng");
@@ -20,13 +20,11 @@ public class SumArray {
                 arr[i][j] = scanner.nextInt();
             }
         }
-        for (int i = 0; i < numA; i++) {
-            if(choose == (i)) {
-                for (int j = 0; j < arr[i].length; j++) {
-                    sum += arr[i][j];
-                }
-            }
+        for (int j = 0; j < arr[choose].length; j++) {
+            sum += arr[choose][j];
         }
         System.out.print(sum);
     }
 }
+
+

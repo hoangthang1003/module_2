@@ -1,4 +1,4 @@
-package ss3_array.exercise;
+package ss4_method.exercise;
 
 import java.util.Scanner;
 
@@ -7,7 +7,8 @@ public class CountCharacters {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập chuỗi bất kì");
         String str = scanner.nextLine();
-        char character = 'a';
+        System.out.println("Nhập kí tự cần kiểm tra");
+        char character = scanner.nextLine().charAt(0);
 
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
