@@ -7,6 +7,6 @@ public class ShapeTest {
         System.out.println(shape);
 
         shape = new Shape("red", false);
-        System.out.println(shape);
+        System.out.println(shape.isFilled());
     }
 }

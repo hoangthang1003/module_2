@@ -9,6 +9,7 @@ public class CircleTest {
         System.out.println(circle);
 
         circle = new Circle(3.5, "indigo", false);
-        System.out.println(circle);
+        double percent = Math.floor(Math.random() * 100) + 1;
+        System.out.println(circle.getArea()+"\n"+circle.resize(percent));
     }
 }

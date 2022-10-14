@@ -1,6 +1,6 @@
 package ss7_AbstractClass.exercise;
 
-public class Shape implements Resizeable {
+public class Shape {
     private String color = "green";
     private boolean filled = true;
 
@@ -36,8 +36,4 @@ public class Shape implements Resizeable {
                 + (isFilled() ? "filled" : "not filled");
     }
 
-    @Override
-    public void resize(double percent) {
-
-    }
 }

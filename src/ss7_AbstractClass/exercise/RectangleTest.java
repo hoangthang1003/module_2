@@ -9,6 +9,7 @@ public class RectangleTest {
         System.out.println(rectangle);
 
         rectangle = new Rectangle(2.5, 3.8, "orange", true);
-        System.out.println(rectangle);
+        double percent = Math.floor(Math.random() * 100) + 1;
+        System.out.println(rectangle.getArea()+"\n"+rectangle.resize(percent));
     }
 }
