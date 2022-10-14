@@ -1,4 +1,4 @@
-package ss6_inheritance.exercise;
+package ss6_inheritance.exercise.circle_cylinder;
 
 public class Cylinder extends Circle {
     private double hight = 1.0;
