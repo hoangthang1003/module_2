@@ -1,4 +1,4 @@
-package ss7_AbstractClass.exercise;
+package ss7_AbstractClass.exercise.Resizeable;
 
     public class Circle extends Shape implements Resizeable{
         private double radius = 1.0;

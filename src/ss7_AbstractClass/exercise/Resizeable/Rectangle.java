@@ -1,4 +1,4 @@
-package ss7_AbstractClass.exercise;
+package ss7_AbstractClass.exercise.Resizeable;
 
 public class Rectangle extends Shape implements Resizeable{
     private double width = 1.0;

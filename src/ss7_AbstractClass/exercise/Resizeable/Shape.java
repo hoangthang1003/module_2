@@ -1,4 +1,4 @@
-package ss7_AbstractClass.exercise;
+package ss7_AbstractClass.exercise.Resizeable;
 
 public class Shape {
     private String color = "green";
