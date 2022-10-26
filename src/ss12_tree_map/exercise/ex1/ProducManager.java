@@ -1,7 +1,6 @@
 package ss12_tree_map.exercise.ex1;
 
 
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -10,7 +9,7 @@ public class ProducManager extends Product {
     ArrayList<Product> productsArrayList = new ArrayList<>();
     Product product1 = new Product(1, "Táo", 5);
     Product product2 = new Product(2, "Chuối", 2);
-    Product product3 = new Product(1, "Dưa hấu", 9);
+    Product product3 = new Product(3, "Dưa hấu", 9);
 
     {
         productsArrayList.add(product1);
@@ -23,6 +22,7 @@ public class ProducManager extends Product {
     }
 
     public void add() {
+        display();
         Product product = new Product();
         System.out.println("Mời bạn nhập id");
         product.setId(Integer.parseInt(scanner.nextLine()));
@@ -35,6 +35,7 @@ public class ProducManager extends Product {
     }
 
     public void deleteProduct() {
+        display();
         System.out.println("Nhập id sản phẩm muốn xóa");
         int id = Integer.parseInt(scanner.nextLine());
         for (Product item : productsArrayList) {
@@ -47,6 +48,7 @@ public class ProducManager extends Product {
     }
 
     public void edit() {
+        display();
         System.out.println("nhập id sản phâm bạn muốn sửa vào");
         int id = Integer.parseInt(scanner.nextLine());
         for (Product item : productsArrayList) {
@@ -64,12 +66,14 @@ public class ProducManager extends Product {
     }
 
     public void search() {
-        System.out.println("Nhập sản phẩm bạn muốn tìm kiếm");
+        System.out.println("Nhập vào sản phẩm muốn tìm kiếm");
         String name = scanner.nextLine();
-        for (Product item : productsArrayList) {
-            if (item.getName() == name) {
-                System.out.println(item.toString());
+        for (Product product : productsArrayList) {
+            if (product.getName().equals(name)) {
+                System.out.println(product.toString());
+                return;
             }
         }
+        System.out.println("Không tìm thấy sản phẩm này");
     }
 }

@@ -15,7 +15,7 @@ public class TestProduct {
                     "2.Edit product\n" +
                     "3.Delete product\n" +
                     "4.Display products\n " +
-                    "5.Sort product\n" +
+                    "5.Search product\n" +
                     "6.Exit");
             System.out.print("Choice of you : ");
             int choose = Integer.parseInt(scanner.nextLine());

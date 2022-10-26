@@ -57,8 +57,8 @@ public class Triangle {
 
     public void checkTriangle(int number1, int number2, int number3) throws IllegalTriangleException {
         if (number1 + number2 <= number3 || number1 + number3 <= number2 || number3 + number2 <= number1) {
-            throw new IllegalTriangleException("Không phải 3 cạnh tam giác rùi! ");
+            throw new IllegalTriangleException("Không phải 3 cạnh tam giác! ");
         }
-        System.out.println("Chắc chắn là 3 cạnh tam giac :) ");
+        System.out.println("Chắc chắn là 3 cạnh tam giác :) ");
     }
 }   

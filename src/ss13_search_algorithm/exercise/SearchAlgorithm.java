@@ -13,25 +13,26 @@ public class SearchAlgorithm {
             System.out.print("Số thứ tự là " + (i + 1) + ":");
             arr[i] = Integer.parseInt(scanner.nextLine());
         }
+        System.out.println("mảng vừa mới tạo " + Arrays.toString(arr));
         Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Mảng sau sắp xếp " + Arrays.toString(arr));
         System.out.println("Nhập số bạn muốn kiểm tra vào");
         int value = Integer.parseInt(scanner.nextLine());
-        System.out.print("Vị trí của số cần tìm là " + binarySearch(arr, arr[0], arr.length - 1, value));
+        System.out.print(binarySearch(arr, 0, arr.length - 1, value));
     }
 
-    public static int binarySearch(int[] array, int left, int right, int value) {
+    public static boolean binarySearch(int[] array, int left, int right, int value) {
         if (right >= left) {
             int mid = (left + right) / 2;
 
             if (array[mid] == value) {
-                return mid;
+                return true;
             }
             if (value > array[mid]) {
                 return binarySearch(array, mid + 1, right, value);
             }
             return binarySearch(array, left, mid - 1, value);
         }
-       return -1;
+        return false;
     }
 }
