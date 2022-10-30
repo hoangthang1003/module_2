@@ -4,7 +4,7 @@ package ss12_tree_map.exercise.ex1;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ProducManager extends Product {
+public class ProductManager extends Product {
     Scanner scanner = new Scanner(System.in);
     ArrayList<Product> productsArrayList = new ArrayList<>();
     Product product1 = new Product(1, "Táo", 5);
