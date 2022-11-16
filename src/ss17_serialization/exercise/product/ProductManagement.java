@@ -5,8 +5,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ProductManagement {
-    private static Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
     private static final ArrayList<Product> products = new ArrayList<>();
+
     static {
         Product product1 = new Product(1, "Điện thoại", "Apple", 10000);
         Product product2 = new Product(2, "Máy tính", "MSI", 20000);
@@ -15,7 +16,8 @@ public class ProductManagement {
         products.add(product2);
         products.add(product3);
     }
-    static void writeFile() {
+
+    public void writeFile() {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream("D:\\module_2\\src\\ss17_serialization\\exercise\\product\\product.dat");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
@@ -24,7 +26,8 @@ public class ProductManagement {
             e.printStackTrace();
         }
     }
-    static void addProduct() {
+
+    public void addProduct() {
         Product product = new Product();
         System.out.println("Nhập vào thông tin sản phẩm");
         System.out.println("Mã sản phẩm:");
@@ -39,13 +42,13 @@ public class ProductManagement {
 
     }
 
-    static void displayList() {
+    public void displayList() {
         for (Product product : products) {
             System.out.println(product);
         }
     }
 
-    static void search() {
+    public void search() {
         System.out.println("Nhập mã sản phẩm cần tìm");
         int id = Integer.parseInt(scanner.nextLine());
         for (Product product : products) {

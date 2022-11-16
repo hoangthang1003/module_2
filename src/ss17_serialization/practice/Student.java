@@ -1,4 +1,4 @@
-package ss17_serialization.exercise;
+package ss17_serialization.practice;
 
 import java.io.Serializable;
 
@@ -42,7 +42,7 @@ public class Student implements Serializable {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "StudentServices{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +

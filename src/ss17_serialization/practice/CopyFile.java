@@ -1,4 +1,4 @@
-package ss17_serialization.exercise;
+package ss17_serialization.practice;
 
 import java.io.*;
 import java.nio.file.Files;

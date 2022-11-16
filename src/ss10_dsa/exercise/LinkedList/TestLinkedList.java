@@ -47,7 +47,7 @@ public class TestLinkedList {
         Student student2=new Student(2,"Lan2");
         Student student3=new Student(3,"Lan3");
         Student student4=new Student(4,"Lan4");
-//        Student student5=new Student(5,"Lan5");
+//        StudentServices student5=new StudentServices(5,"Lan5");
 
         myLinkedList.addFirst(student1);
         myLinkedList.addFirst(student2);
@@ -55,17 +55,17 @@ public class TestLinkedList {
         myLinkedList.addLast(student4);
 
         //myLinkedList.remove(student4);
-//        MyLinkedList<Student> cloneLinkedList= myLinkedList.clone();
+//        MyLinkedList<StudentServices> cloneLinkedList= myLinkedList.clone();
 
 //        System.out.println(myLinkedList.constrains(student1));
         System.out.println(myLinkedList.indexOf(student3));
 //        for(int i=0;i<myLinkedList.size();i++){
-//            Student student=(Student) myLinkedList.get(i);
+//            StudentServices student=(StudentServices) myLinkedList.get(i);
 //            System.out.println(student.getName());
 //        }
 
 //        for(int i=0;i<cloneLinkedList.size();i++){
-//            Student student=(Student) cloneLinkedList.get(i);
+//            StudentServices student=(StudentServices) cloneLinkedList.get(i);
 //            System.out.println(student.getName());
 //        }
     }

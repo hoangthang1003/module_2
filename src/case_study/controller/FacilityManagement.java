@@ -1,7 +1,7 @@
 package case_study.controller;
 
 public class FacilityManagement {
-    public void displayFacility() {
+    public static void displayFacility() {
         System.out.println("1\tDisplay list facility\n" +
                 "2\tAdd new facility\n" +
                 "3\tDisplay list facility maintenance\n" +

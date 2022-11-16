@@ -1,12 +1,10 @@
 package ss12_tree_map.exercise.ex1;
 
-import case_study.controller.*;
-
 import java.util.Scanner;
 
 public class TestProduct {
     public static void main(String[] args) {
-        ProducManager productManager = new ProducManager();
+        ProductManager productManager = new ProductManager();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào 1 số");
         do {

@@ -3,6 +3,8 @@ package ss12_tree_map.exercise.ex1;
 
 import ss10_dsa.exercise.LinkedList.MyLinkedList;
 
+import java.util.ArrayList;
+
 public class Product {
     protected static MyLinkedList<Object> product;
     private int id;
@@ -57,4 +59,5 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
+
 }
